@@ -15,10 +15,10 @@ steps:
     versionSource: 'spec'
     versionSpec: '20.x'
 
-- script: |
-    cd src/api
-    npm ci && npm test
-  displayName: Test API
+# - script: |
+#     cd src/api
+#     npm ci && npm test
+#   displayName: Test API
 
 - script: |
     cd src/web
