@@ -6,6 +6,9 @@
 trigger:
 - main
 
+variables:
+- group: VariableStrings
+
 pool:
   vmImage: ubuntu-latest
 
@@ -16,6 +19,10 @@ steps:
     versionSpec: '20.x'
 
 # - script: |
+#     export AZURE_COSMOS_CONNECTION_STRING=$(COSMOS_CS)
+#     export AZURE_COSMOS_DATABASE_NAME=$(COSMOS_DB)
+#     export APPLICATIONINSIGHTS_CONNECTION_STRING=$(APP_INSIGHTS_CS)
+#     export APPLICATIONINSIGHTS_ROLE_NAME=$(APP_INSIGHTS_ROLE_NAME)
 #     cd src/api
 #     npm ci && npm test
 #   displayName: Test API
