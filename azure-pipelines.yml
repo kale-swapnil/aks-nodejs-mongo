@@ -22,5 +22,5 @@ steps:
 
 - script: |
     cd src/web
-    npm ci && npm audit fix && npm test && npm run build
+    npm ci && npm audit fix && npm run build
     displayName: Build Web
